@@ -323,11 +323,11 @@ class UI:
 
     @staticmethod
     def UPSCALERS_1x_WITH_NONE():
-        return [UI.NONE] + [fn for fn in folder_paths.get_filename_list("upscale_models") if fn.startswith("1x")]
+        return [UI.NONE] + [fn for fn in folder_paths.get_filename_list("upscale_models")]
 
     @staticmethod
     def UPSCALERS_4x_WITH_NONE():
-        return [UI.NONE] + [fn for fn in folder_paths.get_filename_list("upscale_models") if fn.startswith("4x")]
+        return [UI.NONE] + [fn for fn in folder_paths.get_filename_list("upscale_models")]
 
     @staticmethod
     def LORAS_WITH_NONE():
